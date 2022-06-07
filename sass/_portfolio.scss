@@ -1,0 +1,73 @@
+@use '_variables';
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio__text{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    gap:70px;
+    width: 400px;
+    padding-bottom: 35px;
+
+    & .gallery__item {
+        width: 350px;
+        height: 350px;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 25px;
+        transition-duration: .5s;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        & div{
+            position: absolute;
+            bottom: 50px;
+            left: 25px;
+            font-family: "Quicksand";
+            color: white;;
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+
+    & .gallery__item1{
+        background-image: url(C:/Julia/project/creative%20agency/Creative-Agency/images/photo1.jpg);
+        background-color: aqua;
+    }
+    & .gallery__item2{
+        background-image: url(../images/photo2.jpg);
+    }
+    & .gallery__item3{
+        background-image: url(../images/photo3.jpg);
+    }
+}
+
+.portfolio__btn-area {
+    text-align: center;
+}
+
+.portfolio__bubbles {
+    color: #EB00FF;
+    top: 260px;
+    right: 40px;
+    transform: rotate(-25deg);
+}
+
+.portfolio__bubbles2 {
+    color: #EB00FF;
+    top: 500px;
+    left: 385px;
+    transform: rotate(25deg);
+}

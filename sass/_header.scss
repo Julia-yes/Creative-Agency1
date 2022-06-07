@@ -1,0 +1,31 @@
+@use '_variables';
+
+header {
+    font-family: "Quicksand";
+    padding-top: 70px;
+}
+
+.header, .header__nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header__nav ul li {
+    list-style: none;
+    
+    a {
+        text-decoration: none;
+        color: variables.$title-color;
+        margin-right: 50px;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+}
+
+

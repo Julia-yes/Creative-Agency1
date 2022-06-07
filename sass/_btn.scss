@@ -1,0 +1,28 @@
+@use '_variables';
+
+.btn {
+    border: 1px solid variables.$blue;
+    border-radius: 25px;
+    color: variables.$blue;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition-duration: .3s;
+
+    &:hover{
+        background-color: variables.$blue-transition;
+    }    
+}
+
+.btn_reverse {
+    color: white;
+    background-color: variables.$blue;
+    box-shadow: 0 4px 8px 0 #377DFF;
+
+        &:hover {
+            background-color: variables.$dark-blue;
+        }
+    }
+

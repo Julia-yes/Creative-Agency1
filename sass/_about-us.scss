@@ -1,0 +1,52 @@
+@use '_variables';
+
+.about-us__content {
+    display: flex;
+    flex-direction: row;
+    gap: 65px
+}
+
+.about-left {
+    position: relative;
+
+    & img {
+        border-radius: 25px;;
+        object-fit: cover;
+        width: 565px;
+        height: 400px;
+    }
+
+    & .about-us__bubbles {
+        top: -20px;
+        left: -30px;
+        color: variables.$orange;
+    }
+
+    & .about-us__bubbles2 {
+        top: 330px;
+        left: 495px;
+        color: #EB00FF;
+    }
+}
+
+.about-us__content_right {
+    padding-top: 30px;
+
+    & .about-us__btn {
+        margin-left: 25px;
+
+        & div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & img{
+                width: 18px;
+                height: 18px;
+                padding-right: 10px;
+            }
+        }
+
+        
+    }
+}
