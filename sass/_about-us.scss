@@ -1,52 +1,59 @@
 @use '_variables';
 
-.about-us__content {
-    display: flex;
-    flex-direction: row;
-    gap: 65px
-}
+.about-us {
 
-.about-left {
-    position: relative;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
 
-    & img {
+        &_left {
+            position: relative;
+        }
+
+        &_right {
+            padding-top: 30px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__btn {
+        margin-left: 25px;
+
+        &-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-img{
+            width: 18px;
+            height: 18px;
+            padding-right: 10px;
+        }  
+    }
+
+    &__img {
         border-radius: 25px;;
         object-fit: cover;
         width: 565px;
         height: 400px;
     }
 
-    & .about-us__bubbles {
+    &__bubbles {
         top: -20px;
         left: -30px;
-        color: variables.$orange;
+        color: #FF5C00;
     }
 
-    & .about-us__bubbles2 {
+    &__bubbles2 {
         top: 330px;
         left: 495px;
         color: #EB00FF;
     }
-}
-
-.about-us__content_right {
-    padding-top: 30px;
-
-    & .about-us__btn {
-        margin-left: 25px;
-
-        & div{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            & img{
-                width: 18px;
-                height: 18px;
-                padding-right: 10px;
-            }
-        }
-
         
-    }
 }
+

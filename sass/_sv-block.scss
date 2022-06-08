@@ -1,0 +1,81 @@
+@use '_variables';
+
+
+
+.sv-block {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;            
+    background-color: white;
+    font-family: "Quicksand";
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 8px 24px rgb(0 0 0 / 5%);
+    }
+
+    &__circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 25px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &_blue {
+            background-color: variables.$blue;
+        }
+
+        &_red {
+            background-color: variables.$red;
+        }
+
+        &_green {
+            background-color: variables.$green;
+        }
+
+        &_orange {
+            background-color: variables.$orange;
+        }
+
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+    }
+
+     &__text {
+        font-family: "Quicksand";
+        font-size: 24px;
+        font-weight: 600;
+        color: variables.$title-color;
+        text-align: center;
+    }
+}
+
+        
+
+        
+    
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+

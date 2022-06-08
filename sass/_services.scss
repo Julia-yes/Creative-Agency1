@@ -4,116 +4,34 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
 
-.services__left, .services__right {
-    width: 45%;
-}
-
-.services__header, .services__title {
-    text-align: left;
-}
-
-.services__link-block {
-    margin-top: 35px;
-    text-align: -webkit-right;    
+    &__left{
+        width: 45%;
+    } 
     
-    & div {
-        width: 25%;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 15px;
+    &__right {
+        width: 50%;
+    }
+
+    &__header, &__title {
+        text-align: left !important;
+    }
+
+    &__right {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        &:hover {
-                box-shadow: 0 4px 8px 0 #00000017;
-        }
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 150px;
     }
 
-    & .services__link {
-    color: variables.$blue;
-    text-decoration: none;    
-    font-family: "Quicksand";
-    font-size: 20px;
-    font-weight: 600;
-    padding-right: 5px;
-    }
-
-    & .services__arrow {
-        width: 25px;
-        height: 25px;
-    }
 }
 
-.services__right {
-    display: grid;
-    grid-template-areas: "a b"
-                        "c d";
-    gap: 40px;
+         
 
-    & .services__block {
-        width: 260px;
-        height: 260px;
-        
 
-        & .circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 25px 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
 
-            & img {
-                width: 40px;
-                height: 40px;
-            }
-        }
 
-        & .circle_blue {
-            background-color: variables.$blue;
-        }
 
-        & .circle_red {
-            background-color: variables.$red;
-        }
 
-        & .circle_green {
-            background-color: variables.$green;
-        }
 
-        & .circle_orange {
-            background-color: variables.$orange;
-        }
-    }
-
-    & .services__block1 {
-        grid-area: a;
-        
-    }
-
-    & .services__block2 {
-        grid-area: b;
-    }
-
-    & .services__block3 {
-        grid-area: c;
-    }
-
-    & .services__block4 {
-        grid-area: d;
-    }
-
-    & .block__text {
-        font-family: "Quicksand";
-        font-size: 24px;
-        font-weight: 600;
-        color: variables.$title-color;
-        text-align: center;
-    }
-}
 

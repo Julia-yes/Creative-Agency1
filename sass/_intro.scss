@@ -6,140 +6,60 @@
     margin: 0 auto;
     font-family: "Nunito";
     position: relative;
-}
 
-.ball {
-    content: "";
-    width: 30px;;
-    height: 30px;
-    background: radial-gradient(circle at 65% 15%, #FF8E8E, #F62424);
-    border-radius: 50%;
-    position: absolute;
-    top:175px;
-    right: -355px;
-}
-
-.ball-blue {
-    background: radial-gradient(circle at 65% 15%, #4485FF, #377DFF);    
-    top:310px;
-    left: -275px;
-}
-
-.intro__title {
-   
-    font-size: 64px;
-    font-weight: 800;
-    color: variables.$title-color;
-    text-align: center;
-    padding-bottom: 25px;
-    margin: 0;
-}
-
-.intro__text {
-    color: variables.$text-color;
-    font-size: 20px;
-    line-height: 150%;
-    padding-bottom: 30px;
-    text-align: center;    
-    text-shadow: 0px 4px 4px #00000044;    
-}
-
-.intro__button {
-    text-align: center;
-}
-
-.intro__foto-block {
-    position: relative;
-    padding-top: 100px;
-
-    & .ball1 {
-        top:280px;
-        left: -60px;
-    }
-
-    & .ball2 {
-        top:70px;
-        left: 900px;
-    }
-}
-
-.intro__bubbles {
-    
-    top: 80px;
-    left: 135px;
-    color: variables.$blue;
-}
-
-.intro__bubbles2 {
-    color: variables.$red;
-    top: 540px;
-    left: 200px;
-
-}
-
-
-.intro__foto{
-    border-radius: 50px;
-    object-fit: cover;
-}
-
-.intro__score {    
-    padding: 15px 20px;
-    position: absolute;
-    top: 125px;
-    left: -105px;
-    
-    & div{
-        display: flex;
-        flex-direction: row;
-        align-items: center;       
-
-        
-        & img{
-            width: 25px;
-            height: 25px;
-            padding-right: 5px;
-        }
-
-        .score__title{
-            color: variables.$title-color;
-            font-family: "Qicksand";
-            font-size: 12px;
-            font-weight: 600;
-            text-shadow: 0px 4px 4px #00000044;
-        }
-    }
-    .score__text {
-        font-family: "Nunito";
-        font-size: 24px;
+    &__title {   
+        font-size: 64px;
+        font-weight: 800;
         color: variables.$title-color;
-        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 25px;
+        margin: 0;
     }
 
-    .score__number {
-        font-weight: 600;
-        padding-right: 5px;
+    &__text {
+        color: variables.$text-color;
+        font-size: 20px;
+        line-height: 150%;
+        padding-bottom: 30px;
+        text-align: center;   
+        opacity: 60%;    
+    }
+
+    &__button {
+        text-align: center;
+    }
+
+    &__foto-block {
+        position: relative;
+        padding-top: 100px;
+    }
+
+    &__bubbles {    
+        top: 80px;
+        left: 135px;
+        color: variables.$blue;
+    }
+
+    &__bubbles2 {
+        color: variables.$red;
+        top: 540px;
+        left: 200px;
+    }
+
+    &__foto{
+        border-radius: 50px;
+        object-fit: cover;
     }
 }
+
 
 .intro__review {
-    width: 20%;
+    width: 130px;
+    height: 120px;
     font-size: 10px;
     bottom: 0;
     right: -130px;
     position: absolute;
 
-    & img{
-        width: 30px;
-        height: 30px;
-    }
-
-    & .reviewer__information {
-        padding-left: 10px;
-    }
-
-    & .reviewer__profession {
-        font-size: 6px;
-    }
 }
 

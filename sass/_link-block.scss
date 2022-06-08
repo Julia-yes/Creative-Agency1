@@ -1,0 +1,39 @@
+@use '_variables';
+
+.link-block {
+    margin-top: 35px;
+    text-align: -webkit-right;    
+    
+    &__content {
+        width: 30%;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 #00000017;
+        }
+    }
+
+    &__link {
+        color: variables.$blue;
+        text-decoration: none;    
+        font-family: "Quicksand";
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 5px;
+    }
+
+    &__arrow {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
+

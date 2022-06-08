@@ -1,0 +1,29 @@
+@use '_variables';
+
+.h-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 385px;
+    justify-content: space-between;
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: variables.$title-color;
+        font-size: 18px;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+

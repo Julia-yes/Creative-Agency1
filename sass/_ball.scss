@@ -1,0 +1,30 @@
+@use '_variables';
+
+.ball {
+    content: "";
+    width: 30px;;
+    height: 30px;
+    background: radial-gradient(circle at 65% 15%, #FF8E8E, #F62424);
+    border-radius: 50%;
+    position: absolute;
+    top:175px;
+    right: -355px;
+
+    &_blue {
+        background: radial-gradient(circle at 65% 15%, #4485FF, #377DFF);    
+        top:310px;
+        left: -275px;
+    }
+
+    &_left {
+        top:280px;
+        left: -60px;
+    }
+
+    &_right {
+        top:70px;
+        left: 900px;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+@use '_variables';
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding: 0 60px 20px 60px;
+    border-bottom: 1px solid white;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+
+    &__circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-duration: .3s;
+
+        &:hover {
+            background-color: variables.$blue;
+        }
+
+    }
+
+    
+}
