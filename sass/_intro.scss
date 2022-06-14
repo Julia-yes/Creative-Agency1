@@ -49,17 +49,36 @@
     &__foto{
         border-radius: 50px;
         object-fit: cover;
+        width: 100%;
+    }
+
+    &__review {
+        width: 130px;
+        height: 120px;
+        font-size: 10px;
+        bottom: 0;
+        right: -130px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .intro {
+        &__bubbles2 {            
+            top: 410px;
+            left: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro {
+        padding-top: 30px;
+        &__title {   
+            font-size: 50px;
+        }
     }
 }
 
 
-.intro__review {
-    width: 130px;
-    height: 120px;
-    font-size: 10px;
-    bottom: 0;
-    right: -130px;
-    position: absolute;
-
-}
 

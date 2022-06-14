@@ -1,14 +1,40 @@
 header {
     font-family: "Quicksand";
-    padding-top: 70px;    
+    position: relative;
 }
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
+    padding-top: 70px;    
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding-top: 30px;
+        position: fixed;
+        left: 0;
+        top:0;
+        background-color: white;
+        z-index: 10;
+        right: 0;
+        &__nav {
+            width: 0;
+
+            
+        }
+        &__btn {
+            display: none;
+        }
+
+        
+    }
 }
 
 
+@media screen and (max-width: 576px) {
+
+
+}

@@ -7,24 +7,63 @@
     background: radial-gradient(circle at 65% 15%, #FF8E8E, #F62424);
     border-radius: 50%;
     position: absolute;
-    top:175px;
-    right: -355px;
+    
 
     &_blue {
         background: radial-gradient(circle at 65% 15%, #4485FF, #377DFF);    
+        
+    }
+
+    &_1 {
+        top:175px;
+        right: -300px;
+    }
+
+    &_2 {
         top:310px;
         left: -275px;
     }
 
-    &_left {
-        top:280px;
-        left: -60px;
+    &_3 {
+        top:290px;
+        left: -55px;
     }
 
-    &_right {
+    &_4 {
         top:70px;
-        left: 900px;
+        right: -130px;
     }
 }
 
 
+@media screen and (max-width: 1300px) {
+    .ball {        
+        &_1 {
+            right: -155px;
+        }
+
+        &_2 {
+            left: -130px;
+        }
+
+        &_4 {
+            right: -130px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ball {        
+        &_1 {
+            right: -220px;
+        }
+        &_2 {
+            top: 375px;
+            left: -215px;
+        }
+
+        &_4 {
+            right: 0px;
+        }
+    }
+}

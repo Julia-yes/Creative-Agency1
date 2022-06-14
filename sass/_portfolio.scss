@@ -26,4 +26,12 @@
     }
 }
 
+@media screen and (max-width: 1300px) {
 
+    .portfolio {
+        &__bubbles2 {            
+            left: 290px;
+        }
+    }
+
+}

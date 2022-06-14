@@ -9,8 +9,9 @@
     }
 
     &_right {
+        width: 70%;
         position: relative;
-        flex-shrink: 0;
+        
     }
 
     &__title {
@@ -24,16 +25,16 @@
         height: 290px;
 
         &_1 {
-            width: 325px;        
+            width: 37%;        
             top: 70px;
             left: 280px;
             z-index: 3;
         }
 
         &_2 {
-            width: 290px;
+            width: 34%;
             top:-35px;
-            left: 575px;
+            right: 0;
             z-index: 2;
         }
     }
@@ -50,20 +51,41 @@
     &__bubbles2 {
         color: #FF5C00;
         font-size: 65px;
-        bottom: 35px;
-        right: -700px;
+        bottom: 70px;
+        right: 150px;
     }
 
     &__bubbles3 {
         color: #FF5C00;
         font-size: 65px;
-        bottom: 35px;
-        right: -803px;
+        bottom: 70px;
+        right: 26px;
     }
 
 }
 
 
+@media screen and (max-width: 1300px) {
+
+    .collaboration {
+        &__img {        
+            height: 230px;
+            &_1 {
+                left: 215px;
+            }
+        }
+
+        &__bubbles2 {
+            display: none;
+        }
+    
+        &__bubbles3 {
+            bottom: 160px;
+            right: 65px;
+        }
+    }
+
+}
 
 
 

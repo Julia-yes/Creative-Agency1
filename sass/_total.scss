@@ -1,6 +1,7 @@
 .wrapper {
     width: 1240px;
     margin: 0 auto;
+    overflow: hidden;
 }
  body {
      margin: 0;
@@ -17,4 +18,27 @@
 
  h3 {
     margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 900px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+
 }

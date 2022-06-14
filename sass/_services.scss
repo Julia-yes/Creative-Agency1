@@ -8,22 +8,30 @@
     &__left{
         width: 45%;
     } 
-    
-    &__right {
-        width: 50%;
-    }
-
+ 
     &__header, &__title {
         text-align: left !important;
     }
 
     &__right {
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
         padding-left: 150px;
     }
+}
 
+
+@media screen and (max-width: 1300px) {
+    .services {
+        &__right {
+            padding-left: 50px;
+            gap: 0;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
 }
 
          

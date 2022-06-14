@@ -5,13 +5,12 @@
     text-align: -webkit-right;    
     
     &__content {
-        width: 30%;
+        justify-content: end;
         padding: 10px 20px;
         cursor: pointer;
         border-radius: 15px;
         display: flex;
         flex-direction: row;
-        align-items: center;
 
         &:hover {
             box-shadow: 0 4px 8px 0 #00000017;
@@ -32,6 +31,13 @@
         height: 25px;
     }
 }
+
+@media screen and (max-width: 1300px) {
+
+    .link-block { }
+
+}
+
 
 
 

@@ -24,3 +24,14 @@
 }
 
 
+@media screen and (max-width: 1300px) {
+    .nav-block {
+        &_contact {
+            position: absolute;
+            top: 340px;
+            left: 248px;
+        }
+    }
+}
+
+

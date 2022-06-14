@@ -3,16 +3,19 @@
 .about-us {
 
     &__content {
+        position: relative;
         display: flex;
         flex-direction: row;
-        gap: 65px;
+        gap: 5%;
+
 
         &_left {
             position: relative;
+            width: 45%;
         }
 
         &_right {
-            padding-top: 30px;
+            width: 55%;
         }
     }
 
@@ -39,8 +42,7 @@
     &__img {
         border-radius: 25px;;
         object-fit: cover;
-        width: 565px;
-        height: 400px;
+        width: 100%;
     }
 
     &__bubbles {
@@ -57,3 +59,20 @@
         
 }
 
+@media screen and (max-width: 1300px) {
+    .about-us {        
+        &__bubbles2 {
+            top: 215px;
+            left: 305px;            
+        }
+
+
+        &__buttons {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+        }
+
+    }
+
+}

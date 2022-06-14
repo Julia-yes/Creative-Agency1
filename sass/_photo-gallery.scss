@@ -47,3 +47,17 @@
 
 }
 
+@media screen and (max-width: 1300px) {
+    .photo-gallery {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+
+        &__item {
+            width: 30%;
+            padding-top: 30%;
+            height: 0;
+        }
+    }
+}
+
