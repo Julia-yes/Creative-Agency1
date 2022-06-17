@@ -10,7 +10,6 @@
 
 
         &_left {
-            position: relative;
             width: 45%;
         }
 
@@ -19,9 +18,14 @@
         }
     }
 
+    &__text {
+        margin-top: 0;
+    }
+
     &__buttons {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     &__btn {
@@ -39,40 +43,86 @@
         }  
     }
 
+    &__img-block {
+        position: relative;
+    }
+
     &__img {
         border-radius: 25px;;
         object-fit: cover;
         width: 100%;
     }
 
-    &__bubbles {
-        top: -20px;
+    &__bubbles_1 {
+        top: -15px;
         left: -30px;
         color: #FF5C00;
     }
 
-    &__bubbles2 {
-        top: 330px;
-        left: 495px;
+    &__bubbles_2 {
+        bottom: -15px;
+        right: -30px;
         color: #EB00FF;
     }
+    
         
 }
 
 @media screen and (max-width: 1300px) {
     .about-us {        
-        &__bubbles2 {
-            top: 215px;
-            left: 305px;            
+        &__bubbles_2 {       
         }
-
-
-        &__buttons {
-            position: absolute;
-            bottom: 60px;
-            left: 0;
-        }
-
     }
+}
 
+@media screen and (max-width: 992px) {
+    .about-us {        
+        &__text {
+            font-size: 16px;          
+        }
+
+        
+        &__bubbles_1 {       
+            left: -15px;
+        }
+
+        &__bubbles_2 {       
+            right: -15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {        
+        &__content {
+            flex-direction: column;
+            flex-flow: wrap;
+
+            &_left {
+                width: 100%;
+                order: 2;
+                margin-top: 50px;
+            }
+
+            &_right {
+                width: 100%;
+                order: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-us {        
+        &__buttons {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        &__btn {
+            margin: 0;
+        }
+    }
 }

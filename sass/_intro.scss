@@ -1,7 +1,7 @@
 @use '_variables';
 
 .intro {
-    padding-top: 70px;
+    padding-top: 220px;
     width: 60%;
     margin: 0 auto;
     font-family: "Nunito";
@@ -32,17 +32,18 @@
     &__foto-block {
         position: relative;
         padding-top: 100px;
+        text-align: center;
     }
 
-    &__bubbles {    
+    &__bubbles_1 {    
         top: 80px;
-        left: 135px;
+        left: 200px;
         color: variables.$blue;
     }
 
-    &__bubbles2 {
+    &__bubbles_2 {
         color: variables.$red;
-        top: 540px;
+        bottom: -15px;
         left: 200px;
     }
 
@@ -64,21 +65,109 @@
 
 @media screen and (max-width: 1300px) {
     .intro {
-        &__bubbles2 {            
-            top: 410px;
-            left: 150px;
+        &__bubbles_1 {  
+            left: 135px;
+        }
+
+        &__bubbles_2 {  
+            left: 135px;
         }
     }
 }
 
 @media screen and (max-width: 992px) {
     .intro {
-        padding-top: 30px;
         &__title {   
             font-size: 50px;
         }
     }
 }
 
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 80%;
+        padding-top: 170px;
+        &__title {   
+            font-size: 30px;
+        }
 
+        &__text {
+            font-size: 18px;
+            ;   
+        }
+
+        &__review {
+            height: 100px;
+            bottom: -18px;
+            right: -40px;
+        }
+
+        &__foto-block {
+            padding-bottom: 20px;
+        }
+
+        &__foto{
+            border-radius: 12px;
+        }
+
+        &__bubbles_1 {  
+            left: auto;
+            right: -15px;
+            top: 85px
+        }
+
+        &__bubbles_2 {  
+            left: -15px;
+            bottom: 10px;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro {
+        width: 100%;
+        &__title {   
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 14px;
+            ;   
+        }
+
+        &__foto {
+            width: 80%;
+        }
+        &__review {
+            width: 80px;
+            height: 80px;
+            
+            bottom: 0;
+            right: 35px;
+
+            .reviewer__name {
+                font-size: 5px;
+            }
+
+            .reviewer__profession_little {
+                font-size: 3px;
+            }
+
+            .review__text{
+                font-size: 5px;
+                line-height: 8px;
+            }
+        }
+
+        &__bubbles_1 {  
+            right: 35px;
+        }
+
+        &__bubbles_2 {  
+            left: 35px;
+            
+        }
+    }
+}
 

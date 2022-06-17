@@ -22,16 +22,17 @@
         padding-top: 30px;        
         letter-spacing: 0.01em;
         opacity: 80%;
+        margin: 0;
     }
 
-    &__bubbles {
+    &__bubbles_1 {
         color:#0B50FF;
         transform: rotate(25deg);
         top: 120px;
         left: 80px;
     }
 
-    &__bubbles2 {
+    &__bubbles_2 {
         color:#0B50FF;
         transform: rotate(25deg);
         bottom: -35px;
@@ -54,13 +55,63 @@
             padding-bottom: 0;
         }
 
-        &__bubbles2 {
+        &__bubbles_2 {
             right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) { 
+    .testimonial {
+        &__review {
+            width: 50%;
+
+            &_3{
+                display: none;
+            }
+        }
+        &__bubbles_1 {
+            top: 75px;
+        }
+
+        &__bubbles_2 {
+            display: none;
         }
     }
 
 }
 
+@media screen and (max-width: 768px) { 
+    .testimonial {
+        &__text{
+            font-size: 14px;
+        }
+
+        &__bubbles_1 {
+            display: none;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 576px) { 
+    .testimonial {
+        &__review {
+            width: 100%;
+
+            &_2{
+                display: none;
+            }
+        }
+
+        &__bubbles_1 {
+            display: none;
+        }
+
+    }
+
+}
 
 
 

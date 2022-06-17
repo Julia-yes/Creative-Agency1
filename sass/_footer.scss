@@ -6,12 +6,21 @@ footer {
 
 .footer {
     &__nav {
-        padding-top: 120px;
+        padding-top: 60px;
         padding-bottom: 75px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         position: relative;
+        gap: 70px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 70px;
     }
 
     &__logo {
@@ -30,14 +39,29 @@ footer {
         padding-top: 15px;
         color: white;
         padding-bottom: 40px;
+        text-align: center;
+        line-height: 1.5;
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 992px) {
     .footer {
+        
         &__nav {
-            padding-bottom: 175px;
-        }
+            gap: 50px;
+            justify-content: start;
     }
+        }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        
+        &__nav {
+            flex-direction: column;
+            padding-top: 45px;
+    }
+        }
 
 }

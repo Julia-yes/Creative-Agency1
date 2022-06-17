@@ -5,6 +5,7 @@
     border-radius: 25px;
     color: variables.$blue;
     font-size: 16px;
+    line-height: 24px;
     font-weight: 600;
     background-color: white;
     padding: 12px 50px;
@@ -21,8 +22,20 @@
     background-color: variables.$blue;
     box-shadow: 0 4px 8px 0 #377DFF;
 
-        &:hover {
-            background-color: variables.$dark-blue;
-        }
+    &:hover {
+        background-color: variables.$dark-blue;
     }
+}
 
+@media screen and (max-width: 992px) {
+    .btn {  
+        padding: 10px 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {  
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

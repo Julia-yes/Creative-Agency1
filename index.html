@@ -56,8 +56,8 @@
                     <p class="intro__text">when you need us for improve your business,<br> then come with us to help your business have reach it, you just sit and feel that goal</p>
                     <div class="intro__button"><button class="btn btn_reverse intro__btn">Start Project</button></div>
                     <div class="intro__foto-block">
-                        <span class="icon icon-bubbles intro__bubbles"></span>
-                        <span class="icon icon-bubbles intro__bubbles intro__bubbles2"></span>
+                        <span class="icon icon-bubbles intro__bubbles_1"></span>
+                        <span class="icon icon-bubbles intro__bubbles_2"></span>
                         <div class="ball ball_3"></div>
                         <div class="ball ball_blue ball_4"></div>
                         <img class="intro__foto" src="./images/intro.jpg">
@@ -98,15 +98,17 @@
                     </h3>
                     <div class="about-us__content">
                         <div class="about-us__content_left">
-                            <img src="./images/about-us.png" class="about-us__img">
-                            <span class="icon icon-bubbles about-us__bubbles"></span>
-                            <span class="icon icon-bubbles about-us__bubbles about-us__bubbles2"></span>
-                        </div>
+                            <div class="about-us__img-block">
+                                <img src="./images/about-us.png" class="about-us__img">
+                                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_1"></span>
+                                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_2"></span>
+                            </div>                            
+                        </div> 
                         <div class="about-us__content_right">
-                            <p class="block__text">
+                            <p class="block__text about-us__text">
                                 We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
                             </p>
-                            <p class="block__text">
+                            <p class="block__text about-us__text">
                                 We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
                             </p>
                             <div class="about-us__buttons">
@@ -175,8 +177,8 @@
                     <h2 class="block__header">Our Portfolio</h2>
                     <h3 class="block__title">What do we do</h3>
                     <p class="block__text portfolio__text">all projects that we have already done , proven can help to use more comfortable, then can used by client from our business</p>
-                    <span class="icon icon-bubbles portfolio__bubbles"></span>
-                    <span class="icon icon-bubbles portfolio__bubbles2"></span>
+                    <span class="icon icon-bubbles portfolio__bubbles_1"></span>
+                    <span class="icon icon-bubbles portfolio__bubbles_2"></span>
                     <div class="photo-gallery">
                         <div class="photo-gallery__item photo-gallery__item_1"><div class="photo-gallery__text">Design Byte App</div></div>
                         <div class="photo-gallery__item photo-gallery__item_2"><div class="photo-gallery__text">Cloud App</div></div>
@@ -193,10 +195,10 @@
                 <div class="main__block block testimonial">
                     <h2 class="block__header">Testimonial</h2>
                     <h3 class="block__title">People Talk about us</h3>
-                    <span class="icon icon-bubbles testimonial__bubbles"></span>
-                    <span class="icon icon-bubbles testimonial__bubbles2"></span>
+                    <span class="icon icon-bubbles testimonial__bubbles_1"></span>
+                    <span class="icon icon-bubbles testimonial__bubbles_2"></span>
                     <div class="testimonial__reviews">
-                        <div class="review testimonial__review">
+                        <div class="review testimonial__review testimonial__review_1">
                             <div class="reviewer testimonial__reviewer">
                                 <img src="./images/testimonial.jpg" class="reviewer__img">
                                 <div class="reviewer__information">
@@ -208,7 +210,7 @@
                                 There are many variations passages of Lorem Ipsum majority some by words which don't look . 
                             </p>
                         </div>
-                        <div class="review testimonial__review">
+                        <div class="review testimonial__review testimonial__review_2">
                             <div class="reviewer testimonial__reviewer">
                                 <img src="./images/testimonial.jpg" class="reviewer__img">
                                 <div class="reviewer__information">
@@ -216,11 +218,11 @@
                                     <div class="reviewer__profession">Creative Manager</div>
                                 </div>                                
                             </div>
-                            <div class="testimonial__text">
+                            <p class="testimonial__text">
                                 There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                            </div>
+                            </p>
                         </div>
-                        <div class="review testimonial__review">
+                        <div class="review testimonial__review testimonial__review_3">
                             <div class="reviewer testimonial__reviewer">
                                 <img src="./images/testimonial.jpg" class="reviewer__img">
                                 <div class="reviewer__information">
@@ -228,9 +230,9 @@
                                     <div class="reviewer__profession">Creative Manager</div>
                                 </div>                                
                             </div>
-                            <div class="testimonial__text">
+                            <p class="testimonial__text">
                                 There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                            </div>
+                            </p>
                         </div>
                     </div>                    
                 </div>
@@ -242,7 +244,7 @@
                     <div class="collaboration_left">
                         <h3 class=" collaboration__title block__title">Interesting Collaboration With Us?</h3>
                         <p class="block__text">Help you to reach your business goal</p>
-                        <button class="btn btn_reverse">Get Started</button>
+                        <button class="btn btn_reverse collaboration__btn">Get Started</button>
                     </div>
                     <div class="collaboration_right">
                         <span class="icon icon-bubbles collaboration__bubbles1"></span>
@@ -267,49 +269,55 @@
                                 </div>
                             </div>
                             
-                        </div>                        
-                        <ul class="footer__nav-block nav-block">
-                            <div class="nav-block__title">Terms & policies</div>
-                            <li>
-                                <a href="#" class="nav-block__link">Terms of Service</a>                                
-                            </li>
-                            <li>
-                                <a href="#" class="nav-block__link">Privacy Policy</a>
-                            </li>
-                        </ul>
-                        <ul class="footer__nav-block nav-block">
-                            <div class="nav-block__title">Company</div>
-                            <li>
-                                <a href="#intro" class="nav-block__link">Home</a>                                
-                            </li>
-                            <li>
-                                <a href="#about-us" class="nav-block__link">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#contact-us" class="nav-block__link">Contact Us</a>
-                            </li>
-                        </ul>
-                        <ul class="footer__nav-block nav-block nav-block_contact">
-                            <div class="nav-block__title">Contact</div>
-                            <li>
-                                <div>(+62) 893912392190</div>                                
-                            </li>
-                            <li>
-                                <div>agecnycr@gmail.com</div>                                
-                            </li>
-                        </ul>
-                        <ul class="footer__nav-block nav-block nav-block_big">
-                            <div class="nav-block__title">Location</div>
-                            <li>
-                                <div>PT Osiris Real Estate Internasional</div>                                
-                            </li>
-                            <li>
-                                <div>Jl. KH. Wahid Hasyim Kel No.10D<br> Jakarta, Indonesia</div>                                
-                            </li>
-                            <li>
-                                <div>team@OsirisRealEstate.com</div>                                
-                            </li>
-                        </ul>
+                        </div>         
+                        <div class="footer__content">
+                            <ul class="footer__nav-block nav-block">
+                                <div class="nav-block__title">Terms & policies</div>
+                                <li>
+                                    <a href="#" class="nav-block__link">Terms of Service</a>                                
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-block__link">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__nav-block nav-block">
+                                <div class="nav-block__title">Company</div>
+                                <li>
+                                    <a href="#intro" class="nav-block__link">Home</a>                                
+                                </li>
+                                <li>
+                                    <a href="#about-us" class="nav-block__link">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-us" class="nav-block__link">Contact Us</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__nav-block nav-block nav-block_contact">
+                                <div class="nav-block__title">Contact</div>
+                                <li>
+                                    <div>(+62) 893912392190</div>                                
+                                </li>
+                                <li>
+                                    <div>agecnycr@gmail.com</div>                                
+                                </li>
+                            </ul>
+                            <ul class="footer__nav-block nav-block nav-block_big">
+                                <div class="nav-block__title">Location</div>
+                                <li>
+                                    <div>PT Osiris Real Estate Internasional</div>                                
+                                </li>
+                                <li>
+                                    <div>Jl. KH. Wahid Hasyim Kel No.10D</div>                           
+                                </li>
+                                <li>
+                                    <div>Jakarta, Indonesia</div>                                
+                                </li>
+                                <li>
+                                    <div>team@OsirisRealEstate.com</div>                                
+                                </li>
+                            </ul>
+                        </div>               
+                        
                     </div>
                     <div class="footer__bottom">
                         <div class="footer__socials socials">

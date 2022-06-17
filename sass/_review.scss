@@ -43,8 +43,7 @@
 
         &_little {
             padding-left: 10px;
-        }
-        
+        }        
     }
 
     &__img {
@@ -53,13 +52,11 @@
     }
 
     &__name {
-
         &_blue {
             color: variables.$blue;
             font-size: 20px;
             font-weight: 600;
-        }
-        
+        }        
     }
     
     &__profession {        
@@ -69,5 +66,11 @@
             font-size: 6px;
             line-height: 8px;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .review {
+        padding: 10px;   
     }
 }

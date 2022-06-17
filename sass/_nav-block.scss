@@ -3,13 +3,18 @@
     padding: 0;
     margin: 0;
     font-family: "Quicksand";
-    font-size: 18px;
-    line-height: 300%;
+    font-size: 18px;    
     list-style: none;
+
+    li {
+        padding-bottom: 20px;
+    }
 
     &__title {
         font-size: 22px;
         font-weight: 600;        
+        line-height: 100%;
+        padding-bottom: 20px;
     }
 
     &__link {
@@ -24,14 +29,22 @@
 }
 
 
-@media screen and (max-width: 1300px) {
-    .nav-block {
-        &_contact {
-            position: absolute;
-            top: 340px;
-            left: 248px;
-        }
-    }
-}
+// @media screen and (max-width: 1300px) {
+//     .nav-block {
+//         &_contact {
+//             position: absolute;
+//             top: 340px;
+//             left: 248px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 992px) {
+//     .nav-block {
+//         &_contact {
+//             position: static;
+//         }
+//     }
+// }
 
 

@@ -55,15 +55,35 @@
 @media screen and (max-width: 992px) {
     .ball {        
         &_1 {
-            right: -220px;
+            right: -90px;
         }
+
         &_2 {
-            top: 375px;
-            left: -215px;
+            left: -90px;
         }
 
         &_4 {
             right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ball { 
+        &_1 {
+            top: 40px;
+            right: -30px;
+        }
+
+        &_2 {
+            left: -30px;
+        }
+        &_3 {
+            display: none;
+        }
+
+        &_4 {
+            display: none;
         }
     }
 }

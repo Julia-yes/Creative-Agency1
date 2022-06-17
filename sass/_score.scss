@@ -42,3 +42,34 @@
         padding-right: 5px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .score {            
+        top: 70px;
+        left: -35px;  
+        
+        &__title{
+            font-size: 10px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .score {            
+        top: 80px;
+        left: 20px; 
+        padding: 10px; 
+        
+        &__title{
+            font-size: 8px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
