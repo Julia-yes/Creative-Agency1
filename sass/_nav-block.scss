@@ -21,30 +21,27 @@
         color:white;
         text-decoration: none;
         cursor: pointer;
-        
-        &:hover {
-            text-decoration: underline;
+        position: relative;
+
+        &:after { 
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 1px;
+            width: 0;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
         }
+            
+        &:hover::after { 
+            width: 100%; 
+            left: 0; 
+        }        
     }
 }
 
-
-// @media screen and (max-width: 1300px) {
-//     .nav-block {
-//         &_contact {
-//             position: absolute;
-//             top: 340px;
-//             left: 248px;
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 992px) {
-//     .nav-block {
-//         &_contact {
-//             position: static;
-//         }
-//     }
-// }
 
 

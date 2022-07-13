@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Creative agency">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     </head>
 
     <body class="main"> 
@@ -50,11 +52,14 @@
         <section>
             <div class="wrapper">
                 <div class="intro" id="intro">
-                    <div class="ball ball_1"></div>
+                    <div class="par">
+                        <div class="ball ball_1"></div>
+                    </div>
+                    
                     <div class="ball ball_blue ball_2"></div>
                     <h3 class="intro__title">Make your dream<br> business goal come true</h3>
                     <p class="intro__text">when you need us for improve your business,<br> then come with us to help your business have reach it, you just sit and feel that goal</p>
-                    <div class="intro__button"><button class="btn btn_reverse intro__btn">Start Project</button></div>
+                    <div class="intro__button" id="intro__button"><button data-depth="0.6" class="btn btn_reverse intro__btn">Start Project</button></div>
                     <div class="intro__foto-block">
                         <span class="icon icon-bubbles intro__bubbles_1"></span>
                         <span class="icon icon-bubbles intro__bubbles_2"></span>
@@ -136,8 +141,11 @@
                             </p>                            
                             <div class="services__link-block link-block">
                                 <div class="link-block__content">
-                                    <a class="link-block__link" href="#">Read more</a>
-                                    <img src="./images/arrow-right.svg" class="link-block__arrow">
+                                    <div class="link-block__btn">
+                                        <a class="link-block__link" href="#">Read more</a>
+                                        <img src="./images/arrow-right.svg" class="link-block__arrow">
+                                    </div>
+                                    
                                 </div>                                
                             </div>                    
                         </div>
@@ -198,41 +206,57 @@
                     <span class="icon icon-bubbles testimonial__bubbles_1"></span>
                     <span class="icon icon-bubbles testimonial__bubbles_2"></span>
                     <div class="testimonial__reviews">
-                        <div class="review testimonial__review testimonial__review_1">
-                            <div class="reviewer testimonial__reviewer">
-                                <img src="./images/testimonial.jpg" class="reviewer__img">
-                                <div class="reviewer__information">
-                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                    <div class="reviewer__profession">Creative Manager</div>
-                                </div>                                
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <div class="review testimonial__review testimonial__review_1">
+                                            <div class="reviewer testimonial__reviewer">
+                                                <img src="./images/testimonial.jpg" class="reviewer__img">
+                                                <div class="reviewer__information">
+                                                    <div class="reviewer__name_blue">Angel Rose</div>
+                                                    <div class="reviewer__profession">Creative Manager</div>
+                                                </div>                                
+                                            </div>
+                                            <p class="testimonial__text">
+                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="review testimonial__review testimonial__review_2">
+                                            <div class="reviewer testimonial__reviewer">
+                                                <img src="./images/testimonial.jpg" class="reviewer__img">
+                                                <div class="reviewer__information">
+                                                    <div class="reviewer__name_blue">Angel Rose</div>
+                                                    <div class="reviewer__profession">Creative Manager</div>
+                                                </div>                                
+                                            </div>
+                                            <p class="testimonial__text">
+                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="review testimonial__review testimonial__review_3">
+                                            <div class="reviewer testimonial__reviewer">
+                                                <img src="./images/testimonial.jpg" class="reviewer__img">
+                                                <div class="reviewer__information">
+                                                    <div class="reviewer__name_blue">Angel Rose</div>
+                                                    <div class="reviewer__profession">Creative Manager</div>
+                                                </div>                                
+                                            </div>
+                                            <p class="testimonial__text">
+                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
+                                            </p>
+                                        </div>
+                                    </li>                                    
+                                </ul>
                             </div>
-                            <p class="testimonial__text">
-                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                            </p>
-                        </div>
-                        <div class="review testimonial__review testimonial__review_2">
-                            <div class="reviewer testimonial__reviewer">
-                                <img src="./images/testimonial.jpg" class="reviewer__img">
-                                <div class="reviewer__information">
-                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                    <div class="reviewer__profession">Creative Manager</div>
-                                </div>                                
-                            </div>
-                            <p class="testimonial__text">
-                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                            </p>
-                        </div>
-                        <div class="review testimonial__review testimonial__review_3">
-                            <div class="reviewer testimonial__reviewer">
-                                <img src="./images/testimonial.jpg" class="reviewer__img">
-                                <div class="reviewer__information">
-                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                    <div class="reviewer__profession">Creative Manager</div>
-                                </div>                                
-                            </div>
-                            <p class="testimonial__text">
-                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                            </p>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                            </div>                           
                         </div>
                     </div>                    
                 </div>
@@ -321,17 +345,19 @@
                     </div>
                     <div class="footer__bottom">
                         <div class="footer__socials socials">
-                            <div class="socials__circle"><img src="./images/fb2.svg" class="socials__fb"></div>
-                            <div class="socials__circle"><img src="./images/instagram.svg" class="socials__insta"></div>
-                            <div class="socials__circle"><img src="./images/linkedin.svg" class="socials__ld"></div>
-                            <div class="socials__circle"><img src="./images/mail.svg" class="socials__mail"></div>
-                            <div class="socials__circle"><img src="./images/twitter.svg" class="socials__tw"></div>
+                            <div class="socials__circle"><span class="icon icon-fb2"></span></div>
+                            <div class="socials__circle"><span class="icon icon-instagram"></span></div>
+                            <div class="socials__circle"><span class="icon icon-linkedin"></span></div>
+                            <div class="socials__circle"><span class="icon icon-mail"></span></div>
+                            <div class="socials__circle"><span class="icon icon-twitter"></span></div>
                         </div>
                         <div class="footer__copyright">Copyright @ 2022 Agency Creative. All Right Reserved</div>
                     </div>                    
                 </div>
             </div>
-        </footer>
-        <script src="./js/script.js"></script>
+        </footer>        
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script src="./js/script.js"></script>        
     </body>
 </html>

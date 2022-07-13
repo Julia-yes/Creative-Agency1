@@ -13,13 +13,14 @@ header {
 
 @media screen and (max-width: 992px) {
     .header {
-        padding: 40px 25px 10px 25px;
+        padding: 20px 25px 20px 25px;
         position: fixed;
         left: 0;
         top:0;
         background-color: white;
         z-index: 10;
         right: 0;
+                
         &__nav {
             width: 0;            
         }

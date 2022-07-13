@@ -10,7 +10,6 @@
     }
 
     &__review {
-        width: 300px;
         padding: 50px 40px !important;
     }
 
@@ -18,7 +17,7 @@
         font-size: 18px;
         line-height: 28px;
         color: variables.$text-color;
-        padding-bottom: 80px;
+        padding-bottom: 30px;
         padding-top: 30px;        
         letter-spacing: 0.01em;
         opacity: 80%;
@@ -42,12 +41,8 @@
 
 @media screen and (max-width: 1300px) {
     .testimonial {
-        &__reviews {
-            gap: 20px
-        }
-
+       
         &__review {
-            width: 30%;
             padding: 25px 20px !important;
         }
 
@@ -63,13 +58,7 @@
 
 @media screen and (max-width: 992px) { 
     .testimonial {
-        &__review {
-            width: 50%;
-
-            &_3{
-                display: none;
-            }
-        }
+        
         &__bubbles_1 {
             top: 75px;
         }
@@ -78,7 +67,6 @@
             display: none;
         }
     }
-
 }
 
 @media screen and (max-width: 768px) { 
@@ -90,27 +78,16 @@
         &__bubbles_1 {
             display: none;
         }
-
     }
-
 }
 
 @media screen and (max-width: 576px) { 
     .testimonial {
-        &__review {
-            width: 100%;
-
-            &_2{
-                display: none;
-            }
-        }
-
+       
         &__bubbles_1 {
             display: none;
         }
-
     }
-
 }
 
 

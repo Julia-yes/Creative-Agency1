@@ -47,8 +47,7 @@
         transform: translateX(0)
         }
 
-        &__item {
-            
+        &__item {            
             padding:  20px 0;
             width: 100%;
             text-align: center;
@@ -61,8 +60,7 @@
             &:hover {
                 text-decoration: underline;
                 color: rgb(74, 75, 75);
-            }
-            
+            }            
         }
     }
 }

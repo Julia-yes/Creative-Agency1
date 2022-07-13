@@ -11,19 +11,33 @@
     padding: 12px 50px;
     cursor: pointer;
     transition-duration: .3s;
+    box-shadow: 0px 5px #377dff23, 0px 10px 10px rgba(0,0,0,0.10);
 
     &:hover{
-        background-color: variables.$blue-transition;
+        transform: translateY(5px);
+        box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.10);
     }    
+
+    &:active {
+        color: white;
+        background-color: variables.$blue;
+    }
 }
 
 .btn_reverse {
     color: white;
     background-color: variables.$blue;
     box-shadow: 0 4px 8px 0 #377DFF;
+    box-shadow: 0px 5px #377dff21, 0px 10px 10px rgba(0,0,0,0.10);
 
     &:hover {
-        background-color: variables.$dark-blue;
+        transform: translateY(5px);
+        box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.10);
+    }
+
+    &:active {
+        color: variables.$blue;
+        background-color: white;
     }
 }
 

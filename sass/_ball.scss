@@ -10,8 +10,7 @@
     
 
     &_blue {
-        background: radial-gradient(circle at 65% 15%, #4485FF, #377DFF);    
-        
+        background: radial-gradient(circle at 65% 15%, #4485FF, #377DFF);            
     }
 
     &_1 {
@@ -34,7 +33,6 @@
         right: -130px;
     }
 }
-
 
 @media screen and (max-width: 1300px) {
     .ball {        
@@ -71,13 +69,14 @@
 @media screen and (max-width: 768px) {
     .ball { 
         &_1 {
-            top: 40px;
+            top: 120px;
             right: -30px;
         }
 
         &_2 {
             left: -30px;
         }
+        
         &_3 {
             display: none;
         }

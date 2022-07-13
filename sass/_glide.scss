@@ -1,0 +1,30 @@
+.glide {
+
+    .glide__slide {
+        padding: 10px 25px;        
+    }
+
+    .glide__arrow {
+        background-color: #377dff83;
+    }
+
+    .glide__arrow:hover {
+        background-color: #377dff9d;
+    }
+
+    .glide__arrow--left {
+        left: -20px;
+    }
+    
+    .glide__arrow--right {
+        right: -20px;
+    }    
+}
+
+@media screen and (max-width: 992px) {
+    .glide {
+        .glide__slide {
+            padding: 10px;            
+        }
+    }
+}

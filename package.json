@@ -9,8 +9,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "parallax-controller": "^1.5.0",
+    "scrollmagic": "^2.0.8"
   }
 }

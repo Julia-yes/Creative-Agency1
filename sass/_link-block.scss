@@ -10,10 +10,32 @@
         cursor: pointer;
         border-radius: 15px;
         display: flex;
-        flex-direction: row;
+        flex-direction: row;           
+    }
 
-        &:hover {
-            box-shadow: 0 4px 8px 0 #00000017;
+    &__btn {
+        position: relative;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after { 
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 2px;
+            width: 0;
+            background: variables.$blue;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+            
+        &:hover::after { 
+            width: 100%; 
+            left: 0; 
         }
     }
 
@@ -23,7 +45,7 @@
         font-family: "Quicksand";
         font-size: 20px;
         font-weight: 600;
-        padding-right: 5px;
+        padding-right: 5px;     
     }
 
     &__arrow {
@@ -33,7 +55,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .link-block { 
 
         &__content {
@@ -41,7 +62,6 @@
             padding: 0;
         }
     }
-
 }
 
 

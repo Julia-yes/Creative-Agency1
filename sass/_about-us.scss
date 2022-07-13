@@ -8,7 +8,6 @@
         flex-direction: row;
         gap: 5%;
 
-
         &_left {
             width: 45%;
         }
@@ -36,6 +35,7 @@
             flex-direction: row;
             align-items: center;
         }
+
         &-img{
             width: 18px;
             height: 18px;
@@ -63,16 +63,7 @@
         bottom: -15px;
         right: -30px;
         color: #EB00FF;
-    }
-    
-        
-}
-
-@media screen and (max-width: 1300px) {
-    .about-us {        
-        &__bubbles_2 {       
-        }
-    }
+    } 
 }
 
 @media screen and (max-width: 992px) {
@@ -80,7 +71,6 @@
         &__text {
             font-size: 16px;          
         }
-
         
         &__bubbles_1 {       
             left: -15px;

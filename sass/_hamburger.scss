@@ -1,7 +1,6 @@
 @use '_variables';
 
-.hamburger {
-    
+.hamburger {    
     display: none;   
     height: 50px;
     width: 58px;
@@ -42,20 +41,15 @@
         &_3 {
             transform-origin: 8% 100%;
         }
-
     }    
-}
-
-#hamburger__checkbox:checked + .hamburger__line {
-    background-color: red;
 }
 
 @media screen and (max-width: 992px) {
     .hamburger {
-            display: flex;
-            align-items: center;
-            justify-content: center;      
-            flex-direction: column;  
-            gap: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+        flex-direction: column;  
+        gap: 6px;
     }
 }

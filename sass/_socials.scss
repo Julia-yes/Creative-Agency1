@@ -19,11 +19,39 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        transition-duration: .3s;
         margin: 0 20px;
+        position: relative;
 
-        &:hover {
-            background-color: variables.$blue;
+        &:hover span {
+            color: white;
+        }
+        
+        span{
+            z-index: 3;
+            font-size: 24px;
+            transition: color .5s;
+        }        
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transition: all 0.25s ease;
+            border-radius: 50%;
+            transition: box-shadow 0.5s;
+            box-shadow: inset 0 0 0 0 variables.$blue;;
+            z-index: 1;
+        }
+
+        &:hover::before{
+            box-shadow: inset 0 0 0 40px variables.$blue;
+        }        
+
+        .icon-instagram, .icon-mail, .icon-twitter {
+            padding-top: 1px
         }
     }    
 }
@@ -35,6 +63,4 @@
             margin: 0 10px;
         }
     }
-
-
 }

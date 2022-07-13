@@ -45,23 +45,19 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .footer {
-        
+    .footer {        
         &__nav {
             gap: 50px;
             justify-content: start;
-    }
         }
-
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        
+    .footer {        
         &__nav {
             flex-direction: column;
             padding-top: 45px;
-    }
         }
-
+    }
 }

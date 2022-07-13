@@ -2,21 +2,22 @@
     width: 1240px;
     margin: 0 auto;
 }
- body {
-     margin: 0;
- }
 
- section {
-     margin: 0;
-     padding: 0;
-     position: relative;
- }
+body {
+    margin: 0;
+}
 
- h2 {
-     margin: 0;
- }
+section {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
- h3 {
+h2 {
+    margin: 0;
+}
+
+h3 {
     margin: 0;
 }
 
@@ -29,9 +30,7 @@ p {
     .wrapper {
         width: 900px;
     }
-
 }
-
 
 @media screen and (max-width: 992px) {
 
@@ -45,11 +44,5 @@ p {
         box-sizing: border-box;        
         overflow: hidden;
     }
-
 }
 
-
-@media screen and (max-width: 576px) {
-
-
-}

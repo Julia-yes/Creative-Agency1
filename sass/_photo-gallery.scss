@@ -84,14 +84,23 @@
         width: 300px;
         margin: 0 auto;
         gap: 50px;
+        align-items: center;
 
         &__item {
             width: 100%;
             padding-top: 100%;
         }
+        
         &__text{
             bottom: 30px;
         }        
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    .photo-gallery {        
+        width: 250px;        
     }
 }
 
