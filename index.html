@@ -1,359 +1,414 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" >        
-        <title>Creative agency</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Creative agency">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Creative agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Creative agency" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./glide/glide.core.min.css" />
+    <link rel="stylesheet" href="./glide/glide.theme.min.css" />
+  </head>
 
-    <body class="main">
-        <header>
-            <div class="wrapper">
-                <div class="header">
-                    <div class="header__logo logo">
-                        <div class="logo__content">
-                            <img src="./images/Group.svg" class="logo__img" alt="logo">
-                            <div class="logo__name">
-                                <div class="logo__name_top">Agency</div>
-                                <div class="logo__name_bottom">Creative</div>
-                            </div>
-                        </div>                        
-                    </div> 
-                    <div class="header__nav">
-                        <ul class="header__list h-list">
-                            <li class="h-list__item">
-                                <a href="#intro" class="h-list__link">Home</a>
-                            </li>
-                            <li class="h-list__item">
-                                <a href="#about-us" class="h-list__link">About</a>
-                            </li>
-                            <li class="h-list__item">
-                                <a href="#services" class="h-list__link">Services</a>
-                            </li>
-                            <li class="h-list__item">
-                                <a href="#portfolio" class="h-list__link">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="btn header__btn" id="contact-us">Contact us</button>
-                    <div class="hamburger">
-                        <div class="hamburger__line hamburger__line_1"></div>
-                        <div class="hamburger__line hamburger__line_2"></div>
-                        <div class="hamburger__line hamburger__line_3"></div>
-                    </div>
-                </div>                
+  <body class="main">
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <div class="header__logo logo">
+            <div class="logo__content">
+              <img src="./images/Group.svg" class="logo__img" alt="logo" />
+              <div class="logo__name">
+                <div class="logo__name_top">Agency</div>
+                <div class="logo__name_bottom">Creative</div>
+              </div>
             </div>
-        </header>
-        <section>
-            <div class="wrapper">
-                <div class="intro" id="intro">
-                    <div class="par">
-                        <div class="ball ball_1"></div>
-                    </div>                    
-                    <div class="ball ball_blue ball_2"></div>
-                    <h3 class="intro__title">Make your dream<br> business goal come true</h3>
-                    <p class="intro__text">when you need us for improve your business,<br> then come with us to help your business have reach it, you just sit and feel that goal</p>
-                    <div class="intro__button" id="intro__button"><button data-depth="0.6" class="btn btn_reverse intro__btn">Start Project</button></div>
-                    <div class="intro__foto-block">
-                        <span class="icon icon-bubbles intro__bubbles_1"></span>
-                        <span class="icon icon-bubbles intro__bubbles_2"></span>
-                        <div class="ball ball_3"></div>
-                        <div class="ball ball_blue ball_4"></div>
-                        <img class="intro__foto" src="./images/intro.jpg" alt="intro__foto">
-                        <div class="review intro__score score">
-                            <div class="score__header">
-                                <img src="./images/star.svg" class="score__img" alt="score__img">
-                                <div class="score__title">GREAT PROJECT</div>
-                            </div>                        
-                            <div class="score__text">
-                                <div class="score__number">800+</div>
-                                <div>Done</div>
-                            </div>
-                        </div>
-                        <div class="review intro__review">
-                            <div class="review__reviewer reviewer">
-                                <img src="./images/reviewer.jpg" class="review__img review__img_little" alt="review__img">
-                                <div class="reviewer__information_little">
-                                    <div class="reviewer__name">Bill Adams</div>
-                                    <div class="reviewer__profession_little">CEO UpTech</div>
-                                </div>                                
-                            </div>
-                            <div class="review__text">
-                                “ This team is really the best in its field,I don't regret working with them, and will come back again thanks “
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="header__nav">
+            <ul class="header__list h-list">
+              <li class="h-list__item">
+                <a href="#intro" class="h-list__link">Home</a>
+              </li>
+              <li class="h-list__item">
+                <a href="#about-us" class="h-list__link">About</a>
+              </li>
+              <li class="h-list__item">
+                <a href="#services" class="h-list__link">Services</a>
+              </li>
+              <li class="h-list__item">
+                <a href="#portfolio" class="h-list__link">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn header__btn" id="contact-us">Contact us</button>
+          <div class="hamburger">
+            <div class="hamburger__line hamburger__line_1"></div>
+            <div class="hamburger__line hamburger__line_2"></div>
+            <div class="hamburger__line hamburger__line_3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrapper">
+        <div class="intro" id="intro">
+          <div class="par">
+            <div class="ball ball_1"></div>
+          </div>
+          <div class="ball ball_blue ball_2"></div>
+          <h3 class="intro__title">
+            Make your dream<br />
+            business goal come true
+          </h3>
+          <p class="intro__text">
+            when you need us for improve your business,<br />
+            then come with us to help your business have reach it, you just sit and feel that goal
+          </p>
+          <div class="intro__button" id="intro__button">
+            <button data-depth="0.6" class="btn btn_reverse intro__btn">Start Project</button>
+          </div>
+          <div class="intro__foto-block">
+            <span class="icon icon-bubbles intro__bubbles_1"></span>
+            <span class="icon icon-bubbles intro__bubbles_2"></span>
+            <div class="ball ball_3"></div>
+            <div class="ball ball_blue ball_4"></div>
+            <img class="intro__foto" src="./images/intro.jpg" alt="intro__foto" />
+            <div class="review intro__score score">
+              <div class="score__header">
+                <img src="./images/star.svg" class="score__img" alt="score__img" />
+                <div class="score__title">GREAT PROJECT</div>
+              </div>
+              <div class="score__text">
+                <div class="score__number">800+</div>
+                <div>Done</div>
+              </div>
+            </div>
+            <div class="review intro__review">
+              <div class="review__reviewer reviewer">
+                <img
+                  src="./images/reviewer.jpg"
+                  class="review__img review__img_little"
+                  alt="review__img"
+                />
+                <div class="reviewer__information_little">
+                  <div class="reviewer__name">Bill Adams</div>
+                  <div class="reviewer__profession_little">CEO UpTech</div>
                 </div>
+              </div>
+              <div class="review__text">
+                “ This team is really the best in its field,I don't regret working with them, and
+                will come back again thanks “
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="main__block block about-us" id="about-us">
-                    <h2 class="block__header">
-                        About Us
-                    </h2>
-                    <h3 class="block__title">
-                        Our Teammate
-                    </h3>
-                    <div class="about-us__content">
-                        <div class="about-us__content_left">
-                            <div class="about-us__img-block">
-                                <img src="./images/about-us.png" class="about-us__img" alt="about-us__img">
-                                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_1"></span>
-                                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_2"></span>
-                            </div>                            
-                        </div> 
-                        <div class="about-us__content_right">
-                            <p class="block__text about-us__text">
-                                We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
-                            </p>
-                            <p class="block__text about-us__text">
-                                We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
-                            </p>
-                            <div class="about-us__buttons">
-                                <button class="btn btn_reverse"><span>About Us</span></button>                    
-                                <button class="btn about-us__btn"><span class="about-us__btn-logo"><img src="./images/arrow.svg" class="about-us__btn-img" alt="arrow"><span>Our story</span></span></button>
-                            </div>                            
-                        </div>                        
-                    </div>                    
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="main__block block about-us" id="about-us">
+          <h2 class="block__header">About Us</h2>
+          <h3 class="block__title">Our Teammate</h3>
+          <div class="about-us__content">
+            <div class="about-us__content_left">
+              <div class="about-us__img-block">
+                <img src="./images/about-us.png" class="about-us__img" alt="about-us__img" />
+                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_1"></span>
+                <span class="icon icon-bubbles about-us__bubbles about-us__bubbles_2"></span>
+              </div>
+            </div>
+            <div class="about-us__content_right">
+              <p class="block__text about-us__text">
+                We move with make a Creative Strategy for help your business goal, we help to
+                improve your income by a services we have. make your content look interesting and
+                make people look for your business
+              </p>
+              <p class="block__text about-us__text">
+                We move with make a Creative Strategy for help your business goal, we help to
+                improve your income by a services we have. make your content look interesting and
+                make people look for your business
+              </p>
+              <div class="about-us__buttons">
+                <button class="btn btn_reverse"><span>About Us</span></button>
+                <button class="btn about-us__btn">
+                  <span class="about-us__btn-logo"
+                    ><img src="./images/arrow.svg" class="about-us__btn-img" alt="arrow" /><span
+                      >Our story</span
+                    ></span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="main__block block services" id="services">
+          <div class="services__left">
+            <h2 class="block__header services__header">Our Services</h2>
+            <h3 class="block__title services__title">Perfect and Fast Movement</h3>
+            <div class="services__content">
+              <p class="block__text">
+                We move with make a Creative Strategy for help your business goal, we help to
+                improve your income by a services we have. make your content look interesting and
+                make people look for your business
+              </p>
+              <div class="services__link-block link-block">
+                <div class="link-block__content">
+                  <div class="link-block__btn">
+                    <a class="link-block__link" href="#">Read more</a>
+                    <img
+                      src="./images/arrow-right.svg"
+                      class="link-block__arrow"
+                      alt="link-block__arrow"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="main__block block services" id="services">
-                    <div class="services__left">
-                        <h2 class="block__header services__header">
-                            Our Services
-                        </h2>
-                        <h3 class="block__title services__title">
-                            Perfect and Fast Movement
-                        </h3>
-                        <div class="services__content">
-                            <p class="block__text">
-                                We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
-                            </p>                            
-                            <div class="services__link-block link-block">
-                                <div class="link-block__content">
-                                    <div class="link-block__btn">
-                                        <a class="link-block__link" href="#">Read more</a>
-                                        <img src="./images/arrow-right.svg" class="link-block__arrow" alt="link-block__arrow">
-                                    </div>                                    
-                                </div>                                
-                            </div>                    
-                        </div>
-                    </div>                    
-                    <div class="services__right">
-                        <div class="services__block sv-block">
-                            <div class="sv-block__circle sv-block__circle_blue">
-                                <img src="./images/monitor.svg" class="sv-block__img" alt="sv-block__img">                                    
-                            </div>
-                            <div class="sv-block__text">Social Media Management</div>
-                        </div>
-                        <div class="services__block sv-block">
-                            <div class="sv-block__circle sv-block__circle_red">
-                                <img src="./images/settings.svg" class="sv-block__img" alt="sv-block__img">                                    
-                            </div>
-                            <div class="sv-block__text">Search Engine Opimization</div>
-                        </div>
-                        <div class="services__block sv-block">
-                            <div class="sv-block__circle sv-block__circle_green">
-                                <img src="./images/pen-tool.svg" class="sv-block__img" alt="sv-block__img">                                    
-                            </div>
-                            <div class="sv-block__text">Design</div>
-                        </div>
-                        <div class="services__block sv-block">
-                            <div class="sv-block__circle sv-block__circle_orange">
-                                <img src="./images/tv.svg" class="sv-block__img" alt="sv-block__img">                                    
-                            </div>
-                            <div class="sv-block__text">Ads</div>
-                        </div>
-                    </div>                    
-                </div>
+          </div>
+          <div class="services__right">
+            <div class="services__block sv-block">
+              <div class="sv-block__circle sv-block__circle_blue">
+                <img src="./images/monitor.svg" class="sv-block__img" alt="sv-block__img" />
+              </div>
+              <div class="sv-block__text">Social Media Management</div>
             </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="main__block block portfolio" id="portfolio">
-                    <h2 class="block__header">Our Portfolio</h2>
-                    <h3 class="block__title">What do we do</h3>
-                    <p class="block__text portfolio__text">all projects that we have already done , proven can help to use more comfortable, then can used by client from our business</p>
-                    <span class="icon icon-bubbles portfolio__bubbles_1"></span>
-                    <span class="icon icon-bubbles portfolio__bubbles_2"></span>
-                    <div class="photo-gallery">
-                        <div class="photo-gallery__item photo-gallery__item_1"><div class="photo-gallery__text">Design Byte App</div></div>
-                        <div class="photo-gallery__item photo-gallery__item_2"><div class="photo-gallery__text">Cloud App</div></div>
-                        <div class="photo-gallery__item photo-gallery__item_3"><div class="photo-gallery__text">Design Furniture App</div></div>
+            <div class="services__block sv-block">
+              <div class="sv-block__circle sv-block__circle_red">
+                <img src="./images/settings.svg" class="sv-block__img" alt="sv-block__img" />
+              </div>
+              <div class="sv-block__text">Search Engine Opimization</div>
+            </div>
+            <div class="services__block sv-block">
+              <div class="sv-block__circle sv-block__circle_green">
+                <img src="./images/pen-tool.svg" class="sv-block__img" alt="sv-block__img" />
+              </div>
+              <div class="sv-block__text">Design</div>
+            </div>
+            <div class="services__block sv-block">
+              <div class="sv-block__circle sv-block__circle_orange">
+                <img src="./images/tv.svg" class="sv-block__img" alt="sv-block__img" />
+              </div>
+              <div class="sv-block__text">Ads</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="main__block block portfolio" id="portfolio">
+          <h2 class="block__header">Our Portfolio</h2>
+          <h3 class="block__title">What do we do</h3>
+          <p class="block__text portfolio__text">
+            all projects that we have already done , proven can help to use more comfortable, then
+            can used by client from our business
+          </p>
+          <span class="icon icon-bubbles portfolio__bubbles_1"></span>
+          <span class="icon icon-bubbles portfolio__bubbles_2"></span>
+          <div class="photo-gallery">
+            <div class="photo-gallery__item photo-gallery__item_1">
+              <div class="photo-gallery__text">Design Byte App</div>
+            </div>
+            <div class="photo-gallery__item photo-gallery__item_2">
+              <div class="photo-gallery__text">Cloud App</div>
+            </div>
+            <div class="photo-gallery__item photo-gallery__item_3">
+              <div class="photo-gallery__text">Design Furniture App</div>
+            </div>
+          </div>
+          <div class="portfolio__btn-area">
+            <button class="btn portfolio__btn">See All Portfolio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="main__block block testimonial">
+          <h2 class="block__header">Testimonial</h2>
+          <h3 class="block__title">People Talk about us</h3>
+          <span class="icon icon-bubbles testimonial__bubbles_1"></span>
+          <span class="icon icon-bubbles testimonial__bubbles_2"></span>
+          <div class="testimonial__reviews">
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <div class="review testimonial__review testimonial__review_1">
+                      <div class="reviewer testimonial__reviewer">
+                        <img
+                          src="./images/testimonial.jpg"
+                          class="reviewer__img"
+                          alt="reviewer__img"
+                        />
+                        <div class="reviewer__information">
+                          <div class="reviewer__name_blue">Angel Rose</div>
+                          <div class="reviewer__profession">Creative Manager</div>
+                        </div>
+                      </div>
+                      <p class="testimonial__text">
+                        There are many variations passages of Lorem Ipsum majority some by words
+                        which don't look .
+                      </p>
                     </div>
-                    <div class="portfolio__btn-area">
-                        <button class="btn portfolio__btn">See All Portfolio</button>
-                    </div>                    
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="main__block block testimonial">
-                    <h2 class="block__header">Testimonial</h2>
-                    <h3 class="block__title">People Talk about us</h3>
-                    <span class="icon icon-bubbles testimonial__bubbles_1"></span>
-                    <span class="icon icon-bubbles testimonial__bubbles_2"></span>
-                    <div class="testimonial__reviews">
-                        <div class="glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <li class="glide__slide">
-                                        <div class="review testimonial__review testimonial__review_1">
-                                            <div class="reviewer testimonial__reviewer">
-                                                <img src="./images/testimonial.jpg" class="reviewer__img" alt="reviewer__img">
-                                                <div class="reviewer__information">
-                                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                                    <div class="reviewer__profession">Creative Manager</div>
-                                                </div>                                
-                                            </div>
-                                            <p class="testimonial__text">
-                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div class="review testimonial__review testimonial__review_2">
-                                            <div class="reviewer testimonial__reviewer">
-                                                <img src="./images/testimonial.jpg" class="reviewer__img" alt="reviewer__img">
-                                                <div class="reviewer__information">
-                                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                                    <div class="reviewer__profession">Creative Manager</div>
-                                                </div>                                
-                                            </div>
-                                            <p class="testimonial__text">
-                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div class="review testimonial__review testimonial__review_3">
-                                            <div class="reviewer testimonial__reviewer">
-                                                <img src="./images/testimonial.jpg" class="reviewer__img" alt="reviewer__img">
-                                                <div class="reviewer__information">
-                                                    <div class="reviewer__name_blue">Angel Rose</div>
-                                                    <div class="reviewer__profession">Creative Manager</div>
-                                                </div>                                
-                                            </div>
-                                            <p class="testimonial__text">
-                                                There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                                            </p>
-                                        </div>
-                                    </li>                                    
-                                </ul>
-                            </div>
-                            <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                            </div>                           
+                  </li>
+                  <li class="glide__slide">
+                    <div class="review testimonial__review testimonial__review_2">
+                      <div class="reviewer testimonial__reviewer">
+                        <img
+                          src="./images/testimonial.jpg"
+                          class="reviewer__img"
+                          alt="reviewer__img"
+                        />
+                        <div class="reviewer__information">
+                          <div class="reviewer__name_blue">Angel Rose</div>
+                          <div class="reviewer__profession">Creative Manager</div>
                         </div>
-                    </div>                    
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="main__block block collaboration">
-                    <div class="collaboration_left">
-                        <h3 class=" collaboration__title block__title">Interesting Collaboration With Us?</h3>
-                        <p class="block__text">Help you to reach your business goal</p>
-                        <button class="btn btn_reverse collaboration__btn">Get Started</button>
+                      </div>
+                      <p class="testimonial__text">
+                        There are many variations passages of Lorem Ipsum majority some by words
+                        which don't look .
+                      </p>
                     </div>
-                    <div class="collaboration_right">
-                        <span class="icon icon-bubbles collaboration__bubbles1"></span>
-                        <span class="icon icon-bubbles collaboration__bubbles2"></span>
-                        <span class="icon icon-bubbles collaboration__bubbles3"></span>
-                        <img src="./images/collaboration1.jpg" class="collaboration__img collaboration__img_1" alt="collaboration__img">
-                        <img src="./images/collaboration2.jpg" class="collaboration__img collaboration__img_2" alt="collaboration__img">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="wrapper">
-                <div class="footer">
-                    <div class="footer__nav">
-                        <div class="footer__logo logo">
-                            <div class="logo__content logo__content_space">
-                                <img src="./images/Group.svg" class="logo__img" alt="logo">
-                                <div class="logo__name">
-                                    <div class="logo__name_top">Agency</div>
-                                    <div class="logo__name_bottom">Creative</div>
-                                </div>
-                            </div>                            
-                        </div>         
-                        <div class="footer__content">
-                            <ul class="footer__nav-block nav-block">
-                                <li class="nav-block__title">Terms & policies</li>
-                                <li>
-                                    <a href="#" class="nav-block__link">Terms of Service</a>                                
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-block__link">Privacy Policy</a>
-                                </li>
-                            </ul>
-                            <ul class="footer__nav-block nav-block">
-                                <li class="nav-block__title">Company</li>
-                                <li>
-                                    <a href="#intro" class="nav-block__link">Home</a>                                
-                                </li>
-                                <li>
-                                    <a href="#about-us" class="nav-block__link">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#contact-us" class="nav-block__link">Contact Us</a>
-                                </li>
-                            </ul>
-                            <ul class="footer__nav-block nav-block nav-block_contact">
-                                <li class="nav-block__title">Contact</li>
-                                <li>
-                                    <div>(+62) 893912392190</div>                                
-                                </li>
-                                <li>
-                                    <div>agecnycr@gmail.com</div>                                
-                                </li>
-                            </ul>
-                            <ul class="footer__nav-block nav-block nav-block_big">
-                                <li class="nav-block__title">Location</li>
-                                <li>
-                                    <div>PT Osiris Real Estate Internasional</div>                                
-                                </li>
-                                <li>
-                                    <div>Jl. KH. Wahid Hasyim Kel No.10D</div>                           
-                                </li>
-                                <li>
-                                    <div>Jakarta, Indonesia</div>                                
-                                </li>
-                                <li>
-                                    <div>team@OsirisRealEstate.com</div>                                
-                                </li>
-                            </ul>
-                        </div> 
-                    </div>
-                    <div class="footer__bottom">
-                        <div class="footer__socials socials">
-                            <div class="socials__circle"><span class="icon icon-fb2"></span></div>
-                            <div class="socials__circle"><span class="icon icon-instagram"></span></div>
-                            <div class="socials__circle"><span class="icon icon-linkedin"></span></div>
-                            <div class="socials__circle"><span class="icon icon-mail"></span></div>
-                            <div class="socials__circle"><span class="icon icon-twitter"></span></div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="review testimonial__review testimonial__review_3">
+                      <div class="reviewer testimonial__reviewer">
+                        <img
+                          src="./images/testimonial.jpg"
+                          class="reviewer__img"
+                          alt="reviewer__img"
+                        />
+                        <div class="reviewer__information">
+                          <div class="reviewer__name_blue">Angel Rose</div>
+                          <div class="reviewer__profession">Creative Manager</div>
                         </div>
-                        <div class="footer__copyright">Copyright @ 2022 Agency Creative. All Right Reserved</div>
-                    </div>                    
-                </div>
+                      </div>
+                      <p class="testimonial__text">
+                        There are many variations passages of Lorem Ipsum majority some by words
+                        which don't look .
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
             </div>
-        </footer>        
-        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script src="./js/script.js"></script>        
-    </body>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="main__block block collaboration">
+          <div class="collaboration_left">
+            <h3 class="collaboration__title block__title">Interesting Collaboration With Us?</h3>
+            <p class="block__text">Help you to reach your business goal</p>
+            <button class="btn btn_reverse collaboration__btn">Get Started</button>
+          </div>
+          <div class="collaboration_right">
+            <span class="icon icon-bubbles collaboration__bubbles1"></span>
+            <span class="icon icon-bubbles collaboration__bubbles2"></span>
+            <span class="icon icon-bubbles collaboration__bubbles3"></span>
+            <img
+              src="./images/collaboration1.jpg"
+              class="collaboration__img collaboration__img_1"
+              alt="collaboration__img"
+            />
+            <img
+              src="./images/collaboration2.jpg"
+              class="collaboration__img collaboration__img_2"
+              alt="collaboration__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer__nav">
+            <div class="footer__logo logo">
+              <div class="logo__content logo__content_space">
+                <img src="./images/Group.svg" class="logo__img" alt="logo" />
+                <div class="logo__name">
+                  <div class="logo__name_top">Agency</div>
+                  <div class="logo__name_bottom">Creative</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__content">
+              <ul class="footer__nav-block nav-block">
+                <li class="nav-block__title">Terms & policies</li>
+                <li>
+                  <a href="#" class="nav-block__link">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-block__link">Privacy Policy</a>
+                </li>
+              </ul>
+              <ul class="footer__nav-block nav-block">
+                <li class="nav-block__title">Company</li>
+                <li>
+                  <a href="#intro" class="nav-block__link">Home</a>
+                </li>
+                <li>
+                  <a href="#about-us" class="nav-block__link">About Us</a>
+                </li>
+                <li>
+                  <a href="#contact-us" class="nav-block__link">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="footer__nav-block nav-block nav-block_contact">
+                <li class="nav-block__title">Contact</li>
+                <li>
+                  <div>(+62) 893912392190</div>
+                </li>
+                <li>
+                  <div>agecnycr@gmail.com</div>
+                </li>
+              </ul>
+              <ul class="footer__nav-block nav-block nav-block_big">
+                <li class="nav-block__title">Location</li>
+                <li>
+                  <div>PT Osiris Real Estate Internasional</div>
+                </li>
+                <li>
+                  <div>Jl. KH. Wahid Hasyim Kel No.10D</div>
+                </li>
+                <li>
+                  <div>Jakarta, Indonesia</div>
+                </li>
+                <li>
+                  <div>team@OsirisRealEstate.com</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__socials socials">
+              <div class="socials__circle"><span class="icon icon-fb2"></span></div>
+              <div class="socials__circle"><span class="icon icon-instagram"></span></div>
+              <div class="socials__circle"><span class="icon icon-linkedin"></span></div>
+              <div class="socials__circle"><span class="icon icon-mail"></span></div>
+              <div class="socials__circle"><span class="icon icon-twitter"></span></div>
+            </div>
+            <div class="footer__copyright">
+              Copyright @ 2022 Agency Creative. All Right Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./glide/glide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
